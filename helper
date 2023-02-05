@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read -p "bonus:" lvl
+
+mkdir -p bonus$lvl/Ressources
+touch bonus$lvl/flag
+touch bonus$lvl/source
+touch bonus$lvl/walkthrough
+
+# gcc flags -Wl,-z,norelro -fno-stack-protector -no-pie
+# https://unix.stackexchange.com/questions/209487/how-can-i-use-setfacl-to-give-no-access-to-other-users
